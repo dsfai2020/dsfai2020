@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @dsfai2020
 - 👀 I’m interested in ... Webdesign (React JSX), Machine Learning (python) and Gaming.
 - 🌱 I’m currently learning ... Full Stack API interactions
-- 💞️ I’m looking to collaborate on ... React/Python Projects.
-- 📫 How to reach me ...
+- 💞️ I’m looking to collaborate on ... React, JS, HTML, CSS, Python and Machine Learning Projects.
+- 📫 How to reach me ... 
 
 <!---
 dsfai2020/dsfai2020 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
