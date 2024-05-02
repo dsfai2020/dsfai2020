@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @dsfai2020
-- 👀 I’m interested in ... Webdesign (React JSX), Machine Learning (python), React-Native (Android) and Gaming.
-- 🌱 I’m currently learning ... Android Deployment to Google Playstore
-- 💞️ I’m looking to collaborate on ... React, JS, HTML, CSS, Python and Machine Learning Projects.  
+- 👀 I’m interested in ... Enhancing user experiences for video games.  Building 3rd Party web applications that can help players adapt and improve.  
+- 🌱 I’m currently learning ... Gamification implementation with User Interfaces.
+- 💞️ I’m looking to collaborate on ... React and Python Projects.  
 - 📫 How to reach me ... 
 
 <!---
