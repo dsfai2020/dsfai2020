@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @dsfai2020
-- 👀 I’m interested in ... Enhancing user experiences for video games.  Building 3rd Party web applications that can help players adapt and improve.  
-- 🌱 I’m currently learning ... Gamification implementation with User Interfaces.
-- 💞️ I’m looking to collaborate on ... React and Python Projects.  
+- 👀 I’m interested in ... Building applications that help develop skill and interests.  
+- 🌱 I’m currently learning ... Responsive Design
+- 💞️ I’m looking to collaborate on ... Full Stack/Front End/Back End Projects.  
 - 📫 How to reach me ... 
 
 <!---
