@@ -1,41 +1,58 @@
 <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
   <style>
-    /* ===== Parallax Layers ===== */
-    .background { fill: #0a192f; animation: moveBg 40s linear infinite; }
-    .midground { fill: #233554; animation: moveMid 20s linear infinite; }
-    .foreground { fill: #64ffda; animation: moveFore 10s linear infinite; }
-
-    @keyframes moveBg { 0% { transform: translateX(0); } 100% { transform: translateX(-20px); } }
-    @keyframes moveMid { 0% { transform: translateX(0); } 100% { transform: translateX(-40px); } }
-    @keyframes moveFore { 0% { transform: translateX(0); } 100% { transform: translateX(-80px); } }
-
-    /* ===== Moon Drift (group) ===== */
-    .moonGroup {
-      animation: driftMoon 12s ease-in-out infinite alternate;
+    /* ===== Night Sky Gradient ===== */
+    .background {
+      fill: url(#skyGradient);
+      animation: moveBg 40s linear infinite;
     }
+
+    /* ===== Mountains / Midground ===== */
+    .midground { fill: #1b2a42; animation: moveMid 25s linear infinite; }
+
+    /* ===== Foreground Hills ===== */
+    .foreground { fill: #64ffda; animation: moveFore 15s linear infinite; }
+
+    /* ===== Moon Drift ===== */
+    .moonGroup {
+      animation: driftMoon 14s ease-in-out infinite alternate;
+    }
+
     @keyframes driftMoon {
       0%   { transform: translate(0,0); }
-      25%  { transform: translate(-30px,-15px); }
-      50%  { transform: translate(-60px,0); }
-      75%  { transform: translate(-30px,15px); }
+      25%  { transform: translate(-40px,-20px); }
+      50%  { transform: translate(-80px,0); }
+      75%  { transform: translate(-40px,20px); }
       100% { transform: translate(0,0); }
     }
 
-    /* ===== Floating Stars ===== */
-    .star1 { fill: #ffffff; animation: floatStar1 8s ease-in-out infinite alternate; }
-    .star2 { fill: #ffffff; animation: floatStar2 10s ease-in-out infinite alternate; }
+    /* ===== Stars Floating/Twinkling ===== */
+    .star1 { fill: #ffffff; animation: floatStar1 6s ease-in-out infinite alternate; }
+    .star2 { fill: #ffffff; animation: floatStar2 8s ease-in-out infinite alternate; }
 
     @keyframes floatStar1 {
-      0% { transform: translate(0,0); }
-      50% { transform: translate(5px,-5px); }
-      100% { transform: translate(0,0); }
+      0% { transform: translate(0,0); opacity:1; }
+      50% { transform: translate(4px,-3px); opacity:0.7; }
+      100% { transform: translate(0,0); opacity:1; }
     }
     @keyframes floatStar2 {
-      0% { transform: translate(0,0); }
-      50% { transform: translate(-5px,5px); }
-      100% { transform: translate(0,0); }
+      0% { transform: translate(0,0); opacity:1; }
+      50% { transform: translate(-3px,2px); opacity:0.6; }
+      100% { transform: translate(0,0); opacity:1; }
     }
+
+    /* ===== Horizontal parallax layers ===== */
+    @keyframes moveBg { 0% { transform: translateX(0); } 100% { transform: translateX(-20px); } }
+    @keyframes moveMid { 0% { transform: translateX(0); } 100% { transform: translateX(-50px); } }
+    @keyframes moveFore { 0% { transform: translateX(0); } 100% { transform: translateX(-100px); } }
   </style>
+
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a192f" />
+      <stop offset="100%" stop-color="#071021" />
+    </linearGradient>
+  </defs>
 
   <!-- Background Sky -->
   <rect class="background" width="800" height="300" />
@@ -52,8 +69,11 @@
   </g>
 
   <!-- Floating Stars -->
-  <circle class="star1" cx="150" cy="50" r="8" />
-  <circle class="star2" cx="350" cy="30" r="6" />
-  <circle class="star1" cx="500" cy="70" r="5" />
-  <circle class="star2" cx="250" cy="90" r="7" />
+  <circle class="star1" cx="120" cy="50" r="5" />
+  <circle class="star2" cx="200" cy="30" r="6" />
+  <circle class="star1" cx="300" cy="70" r="4" />
+  <circle class="star2" cx="400" cy="50" r="7" />
+  <circle class="star1" cx="500" cy="90" r="5" />
+  <circle class="star2" cx="600" cy="40" r="6" />
+  <circle class="star1" cx="700" cy="60" r="5" />
 </svg>
