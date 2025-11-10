@@ -3,7 +3,6 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=dsfai2020&style=for-the-badge&color=brightgreen)
 ![GitHub followers](https://img.shields.io/github/followers/dsfai2020?label=Followers&style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/dsfai2020?style=for-the-badge)
-![Visitor Count](https://profile-counter.glitch.me/dsfai2020/count.svg)
 
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dsfai2020&theme=dracula)
 
