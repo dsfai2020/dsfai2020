@@ -10,7 +10,7 @@
   <img src="https://skillicons.dev/icons?i=js,react,nodejs,python,git,aws" />
 </p>
 
-![](./profile-3d-contrib/profile-night-rainbow.svg)
+<img src="parallax-header.svg" width="100%">
 
 - 👋 Hi, I’m @dsfai2020
 - 👀 I’m interested in ... Building applications that help develop skill and interests.  
