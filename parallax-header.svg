@@ -10,9 +10,7 @@
     @keyframes moveFore { 0% { transform: translateX(0); } 100% { transform: translateX(-100px); } }
 
     /* ===== Moon Drift ===== */
-    .moonGroup {
-      animation: driftMoon 14s ease-in-out infinite alternate;
-    }
+    .moonGroup { animation: driftMoon 14s ease-in-out infinite alternate; }
     @keyframes driftMoon {
       0%   { transform: translate(0,0); }
       25%  { transform: translate(-40px,-20px); }
@@ -21,15 +19,22 @@
       100% { transform: translate(0,0); }
     }
 
-    /* ===== Stars Drift & Twinkle ===== */
-    .starGroup {
-      animation: driftStar 8s ease-in-out infinite alternate;
-    }
-    @keyframes driftStar {
-      0% { transform: translate(0,0); opacity:1; }
-      50% { transform: translate(4px,-3px); opacity:0.7; }
-      100% { transform: translate(0,0); opacity:1; }
-    }
+    /* ===== Stars Drift & Twinkle (independent) ===== */
+    .star1 { animation: driftStar1 8s ease-in-out infinite alternate; }
+    .star2 { animation: driftStar2 10s ease-in-out infinite alternate; }
+    .star3 { animation: driftStar3 9s ease-in-out infinite alternate; }
+    .star4 { animation: driftStar4 11s ease-in-out infinite alternate; }
+    .star5 { animation: driftStar5 7s ease-in-out infinite alternate; }
+    .star6 { animation: driftStar6 12s ease-in-out infinite alternate; }
+    .star7 { animation: driftStar7 10s ease-in-out infinite alternate; }
+
+    @keyframes driftStar1 { 0%{transform:translate(0,0);}50%{transform:translate(6px,-3px);}100%{transform:translate(0,0);} }
+    @keyframes driftStar2 { 0%{transform:translate(0,0);}50%{transform:translate(-5px,4px);}100%{transform:translate(0,0);} }
+    @keyframes driftStar3 { 0%{transform:translate(0,0);}50%{transform:translate(4px,-6px);}100%{transform:translate(0,0);} }
+    @keyframes driftStar4 { 0%{transform:translate(0,0);}50%{transform:translate(-6px,5px);}100%{transform:translate(0,0);} }
+    @keyframes driftStar5 { 0%{transform:translate(0,0);}50%{transform:translate(5px,-5px);}100%{transform:translate(0,0);} }
+    @keyframes driftStar6 { 0%{transform:translate(0,0);}50%{transform:translate(-4px,6px);}100%{transform:translate(0,0);} }
+    @keyframes driftStar7 { 0%{transform:translate(0,0);}50%{transform:translate(5px,3px);}100%{transform:translate(0,0);} }
   </style>
 
   <!-- ===== Sky (simulated gradient) ===== -->
@@ -49,11 +54,11 @@
   </g>
 
   <!-- ===== Floating Stars ===== -->
-  <g class="starGroup"><circle cx="120" cy="50" r="5" fill="#ffffff"/></g>
-  <g class="starGroup"><circle cx="200" cy="30" r="6" fill="#ffffff"/></g>
-  <g class="starGroup"><circle cx="300" cy="70" r="4" fill="#ffffff"/></g>
-  <g class="starGroup"><circle cx="400" cy="50" r="7" fill="#ffffff"/></g>
-  <g class="starGroup"><circle cx="500" cy="90" r="5" fill="#ffffff"/></g>
-  <g class="starGroup"><circle cx="600" cy="40" r="6" fill="#ffffff"/></g>
-  <g class="starGroup"><circle cx="700" cy="60" r="5" fill="#ffffff"/></g>
+  <g class="star1"><circle cx="120" cy="50" r="5" fill="#ffffff"/></g>
+  <g class="star2"><circle cx="200" cy="30" r="6" fill="#ffffff"/></g>
+  <g class="star3"><circle cx="300" cy="70" r="4" fill="#ffffff"/></g>
+  <g class="star4"><circle cx="400" cy="50" r="7" fill="#ffffff"/></g>
+  <g class="star5"><circle cx="500" cy="90" r="5" fill="#ffffff"/></g>
+  <g class="star6"><circle cx="600" cy="40" r="6" fill="#ffffff"/></g>
+  <g class="star7"><circle cx="700" cy="60" r="5" fill="#ffffff"/></g>
 </svg>
