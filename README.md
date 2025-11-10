@@ -10,8 +10,6 @@
   <img src="https://skillicons.dev/icons?i=js,react,nodejs,python,git,aws" />
 </p>
 
-<img src="parallax-header.svg" width="100%">
-
 - 😃 Hi, I’m Dave
 - 👀 I’m a Software Developer
 - ⛳️ I use Agile Methodologies 
