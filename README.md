@@ -12,11 +12,9 @@
 
 <img src="parallax-header.svg" width="100%">
 
-- 👋 Hi, I’m @dsfai2020
-- 👀 I’m interested in ... Building applications that help develop skill and interests.  
-- 🌱 I’m currently learning ... Responsive Design
-- 💞️ I’m looking to collaborate on ... Full Stack/Front End/Back End Projects.  
-- 📫 How to reach me ... 
+- 😃 Hi, I’m Dave
+- 👀 I’m a Software Developer
+- ⛳️ I use Agile Methodologies 
 
 <!---
 dsfai2020/dsfai2020 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
