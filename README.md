@@ -5,6 +5,8 @@
 ![Stars](https://img.shields.io/github/stars/dsfai2020?style=for-the-badge)
 ![Visitor Count](https://profile-counter.glitch.me/dsfai2020/count.svg)
 
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dsfai2020&theme=dracula)
+
 
 - 👋 Hi, I’m @dsfai2020
 - 👀 I’m interested in ... Building applications that help develop skill and interests.  
