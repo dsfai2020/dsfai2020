@@ -10,7 +10,9 @@
     @keyframes moveFore { 0% { transform: translateX(0); } 100% { transform: translateX(-100px); } }
 
     /* ===== Moon Drift ===== */
-    .moonGroup { animation: driftMoon 14s ease-in-out infinite alternate; }
+    .moonGroup {
+      animation: driftMoon 14s ease-in-out infinite alternate;
+    }
     @keyframes driftMoon {
       0%   { transform: translate(0,0); }
       25%  { transform: translate(-40px,-20px); }
@@ -19,44 +21,39 @@
       100% { transform: translate(0,0); }
     }
 
-    /* ===== Floating Stars ===== */
-    .star1 { fill: #ffffff; animation: floatStar1 6s ease-in-out infinite alternate; }
-    .star2 { fill: #ffffff; animation: floatStar2 8s ease-in-out infinite alternate; }
-
-    @keyframes floatStar1 {
+    /* ===== Stars Drift & Twinkle ===== */
+    .starGroup {
+      animation: driftStar 8s ease-in-out infinite alternate;
+    }
+    @keyframes driftStar {
       0% { transform: translate(0,0); opacity:1; }
       50% { transform: translate(4px,-3px); opacity:0.7; }
       100% { transform: translate(0,0); opacity:1; }
     }
-    @keyframes floatStar2 {
-      0% { transform: translate(0,0); opacity:1; }
-      50% { transform: translate(-3px,2px); opacity:0.6; }
-      100% { transform: translate(0,0); opacity:1; }
-    }
   </style>
 
-  <!-- Background Sky simulated gradient using stacked rects -->
-  <rect width="800" height="100" fill="#0a192f" />
-  <rect y="100" width="800" height="100" fill="#071021" />
-  <rect y="200" width="800" height="100" fill="#050914" />
+  <!-- ===== Sky (simulated gradient) ===== -->
+  <rect width="800" height="100" fill="#0a192f"/>
+  <rect y="100" width="800" height="100" fill="#071021"/>
+  <rect y="200" width="800" height="100" fill="#050914"/>
 
-  <!-- Midground Mountains -->
-  <path class="midground" d="M0,200 Q400,150 800,200 T1600,200 V300 H0 Z" />
+  <!-- ===== Midground Mountains ===== -->
+  <path class="midground" d="M0,200 Q400,150 800,200 T1600,200 V300 H0 Z"/>
 
-  <!-- Foreground Hills -->
-  <path class="foreground" d="M0,230 Q400,180 800,230 T1600,230 V300 H0 Z" />
+  <!-- ===== Foreground Hills ===== -->
+  <path class="foreground" d="M0,230 Q400,180 800,230 T1600,230 V300 H0 Z"/>
 
-  <!-- Drifting Moon -->
+  <!-- ===== Drifting Moon ===== -->
   <g class="moonGroup">
-    <circle cx="650" cy="80" r="25" fill="#ffd700" />
+    <circle cx="650" cy="80" r="25" fill="#ffd700"/>
   </g>
 
-  <!-- Floating Stars -->
-  <circle class="star1" cx="120" cy="50" r="5" />
-  <circle class="star2" cx="200" cy="30" r="6" />
-  <circle class="star1" cx="300" cy="70" r="4" />
-  <circle class="star2" cx="400" cy="50" r="7" />
-  <circle class="star1" cx="500" cy="90" r="5" />
-  <circle class="star2" cx="600" cy="40" r="6" />
-  <circle class="star1" cx="700" cy="60" r="5" />
+  <!-- ===== Floating Stars ===== -->
+  <g class="starGroup"><circle cx="120" cy="50" r="5" fill="#ffffff"/></g>
+  <g class="starGroup"><circle cx="200" cy="30" r="6" fill="#ffffff"/></g>
+  <g class="starGroup"><circle cx="300" cy="70" r="4" fill="#ffffff"/></g>
+  <g class="starGroup"><circle cx="400" cy="50" r="7" fill="#ffffff"/></g>
+  <g class="starGroup"><circle cx="500" cy="90" r="5" fill="#ffffff"/></g>
+  <g class="starGroup"><circle cx="600" cy="40" r="6" fill="#ffffff"/></g>
+  <g class="starGroup"><circle cx="700" cy="60" r="5" fill="#ffffff"/></g>
 </svg>
