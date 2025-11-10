@@ -6,6 +6,9 @@
 
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dsfai2020&theme=dracula)
 
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,react,nodejs,python,git,aws" />
+</p>
 
 - 👋 Hi, I’m @dsfai2020
 - 👀 I’m interested in ... Building applications that help develop skill and interests.  
